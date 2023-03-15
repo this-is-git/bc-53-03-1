@@ -1,0 +1,120 @@
+:root {
+  --main-color: #9da4bd;
+  --accent-color: #ff6c00;
+  --white-color: #fff;
+  --title-color: #303030;
+  --min-title: rgba(157, 164, 189, 0.6);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-color);
+}
+
+header {
+  background-color: #000000;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.min-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.menu-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.header-button:hover,
+.header-button:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  text-transform: uppercase;
+}
+
+.header-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.hero-min-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero {
+  background-color: #000000;
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.hero-descr {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+.about-min-title {
+  color: var(--min-title);
+}
+
+.price-service,
+.price-sum {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+/* патерн для приховання елментів .visually-hidden */
